@@ -1,0 +1,10 @@
+<h1>{{ title }}</h1>
+<ul>
+    {% for item in items %}
+        <li>
+            <strong>{{ item.name }}</strong> ({{ item.category }}) — {{ item.size }} — {{ item.price }} грн
+            <p>{{ item.description }}</p>
+        </li>
+    {% endfor %}
+</ul>
+<a href="{% url 'home' %}">Головна</a>

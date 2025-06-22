@@ -54,7 +54,7 @@ ROOT_URLCONF = 'DjangoProject4.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates']
+        'DIRS': [BASE_DIR / 'clothing' / 'templates']
         ,
         'APP_DIRS': True,
         'OPTIONS': {
@@ -64,7 +64,7 @@ TEMPLATES = [
                 'django.contrib.messages.context_processors.messages',
             ],
         },
-    },
+},
 ]
 
 WSGI_APPLICATION = 'DjangoProject4.wsgi.application'
